@@ -1,0 +1,23 @@
+$mobile-plus: "(min-width: 320px)";
+$mobile-less: "(max-width: 320px)";
+$tablet-plus: "(min-width: 600px)";
+$tablet-less: "(max-width: 600px)";
+$desktop-plus: "(min-width: 1024px)";
+$desktop-less: "(max-width: 1024px)";
+
+@mixin layout($flow: row, $main: flex-start, $cross: $main) {
+  display: flex;
+  @if ($flow) {
+    flex-flow: $flow;
+  }
+  @if ($main) {
+    justify-content: $main;
+  }
+  @if ($cross) {
+    align-items: $cross;
+  }
+}
+@mixin size($s){
+  width: $s;
+  height: $s;
+}
