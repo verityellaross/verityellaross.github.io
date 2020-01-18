@@ -13,3 +13,5 @@ jobs:
       run: npm install
     - name: production
       run: gulp produce
+    - name: install dangerous dependencies
+      run: npm r cssnano
