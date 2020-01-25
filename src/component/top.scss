@@ -1,5 +1,11 @@
-.top-bar {
-  margin-top: 16px;
+header {
+  width: 100%;
+  margin: 0 16px;
+  border-bottom: 2px solid black;
+  .belt {
+    padding: 16 0;
+  }
+  
   @include layout(column, flex-start, center);
   @media #{$tablet-plus} {
     position: relative;

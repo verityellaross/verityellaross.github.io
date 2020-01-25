@@ -5,21 +5,32 @@
   <meta charset="UTF-8" />
   <title>Verity Ella Ross</title>
   <meta name="viewport" content="width=device-width" />
+  <!-- load fonts early -->
+  {{#font}}
+    <link rel="stylesheet" href="{{.}}">
+  {{/font}}
   <link rel="stylesheet" href="dist/index.css" />
 </head>
 
 <body>
-  <div class="top-bar">
+  <header>
     <div class="title">
-      Verity Ella Ross
+      Ve<span class="to-show">e</span><span class="to-hide">rity Ella</span>Ross
     </div>
     <div class="icons">
       <a class="mdi mdi-instagram mdi-28" target="_blank" href="https://www.instagram.com/verityellaross"></a>
       <a class="mdi mdi-pinterest mdi-28" target="_blank" href="https://www.pinterest.com/verityellaross"></a>
-      <a class="mdi mdi-mail-ru mdi-28" target="#"></a>
+      <a class="mdi mdi-github-circle mdi-28" target="javascript:void(0)"></a>
     </div>
-  </div>
+  </header>
+  <main>
+
+    <footer>
+
+    </footer>
+  </main>
+
 </body>
-<hr>
+<script src="src/code/index.js" type="module"></script>
 
 </html>

@@ -19,7 +19,7 @@ body {
     box-sizing: border-box;
   }
   margin: 0;
-  @include layout(column, $cross: stretch);
+  @include layout(column, $cross: center);
   @include surface(background);
   @include spot(text);
 }
